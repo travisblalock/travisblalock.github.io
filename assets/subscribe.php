@@ -30,7 +30,7 @@ if($_POST) {
          
         $result = $MailChimp->post("lists/$mailchimp_list_id/members", [
                 'email_address' => $subscriber_email,
-                'status'        => 'pending',
+                'status'        => 'subscribed',
         ]);
           
         if($result == false) {
