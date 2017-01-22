@@ -46,6 +46,23 @@
       font-weight: 400;
       margin-bottom: 30px;
   }
+
+  .blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
   .bigText {
       font-size: 10px;
   }
@@ -166,6 +183,25 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
+
+  @-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
   @keyframes slide {
     0% {
       opacity: 0;
@@ -257,7 +293,6 @@
 
 <!--End mc_embed_signup-->
 
-
 </div>
 
 
@@ -277,18 +312,22 @@
 
 <div id="opportunities" class="container-fluid bg-grey">
   <div class="row">
-    <div class="col-sm-6">
-      <h2>Forget About $15, Make $30!</h2><br>
-      <p>Indigenous Code is tearing down the barriers to economic opportunity. Members of one of Indigenous Code’s software development teams receive a starting salary equivalent to 30 dollars an hour.</p>
+    <div class="col-sm-12">
+    <div class="text-center">  <h2>Forget About $15!<br>
+        <span class="blink_me"> Make $30!</span>
+      </h2> </div> <br>
+      <h3>Indigenous Code is demolishing the barriers to economic opportunity!</h3>
+      <p>For too long the riches of software development have been limited to a small elite. People have tried to dictate that you need a College Education or Fancy Degree to build powerful software applications. They have ensured that the suburbs of Washington D.C. are rich with Software Contracts, while the Inner Cities and Heartlanded of this country are denied. <b>But no longer!</b> Through Aglie Eductition and Mass Coding, Indigenous Code will transfer the power of coding from a small group back to the people! Ensuring that everyone is able to reap the rewards of the Digital Industrial Revolution. That is why <b><em>All</em></b> members of Indigenous Code’s software development teams receive a starting salary of 30 dollars an hour. <br>
+        <b><em> - Travis Blalock, Founder of Indigenous Code</em></b>
+      </p>
       <br>
   <ul>
-    <li>No Prior Experience or Knowledge Required!</li>
+    <li>No Prior Experience or Training Required!</li>
     <li>No College or High School Diploma Required!</li>
+    <li>30 Dollars an Hour for Everyone!</li>
+    <li>Learn how to start your own 8(a) Business!</li>
     <li>Potenial Oppurtinies for Anyone Willing to Learn!</li>
   </ul>
-    </div>
-    <div class="col-sm-6">
-      <img src="images/laptopArtNight.jpg" height="400" width="650" >
     </div>
   </div>
 </div>
@@ -302,32 +341,35 @@
     Click on some of our students to learn more about them and see their own creations</h4>
   <br>
   <div class="row slideanim">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       <a href="profiles/jade.html">
           <img src="images/jadePic.jpg" alt="HTML tutorial" align="middle" height="230" width="230" id="logo">
         </a>
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       <a href="profiles/jatnnaProflie/jatnna.html">
           <img src="images/jatnnaPic.jpg" alt="HTML tutorial" align="middle" height="230" width="230" id="logo">
         </a>
     </div>
-    <div class="col-sm-2">
+  <div class="col-sm-4">
       <a href="profiles/jules.html">
           <img src="images/julesPic.jpg" alt="HTML tutorial" align="middle" height="230" width="230" id="logo">
         </a>
     </div>
-    <div class="col-sm-2">
+    </div>
+    <br>
+    <div class="row slideanim">
+    <div class="col-sm-4">
       <a href="profiles/brianProfile/brian.html">
           <img src="images/brianPhoto.jpg" alt="HTML tutorial" align="middle" height="230" width="230" id="logo">
         </a>
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       <a href="profiles/reedProfile/reed.html">
           <img src="images/reedPic.jpg" alt="HTML tutorial" align="middle" height="230" width="230" id="logo">
         </a>
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       <a href="profiles/chavis.html">
           <img src="images/chrisPic.jpg" alt="HTML tutorial" align="middle" height="230" width="230" id="logo">
         </a>
